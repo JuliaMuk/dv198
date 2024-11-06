@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  /* 1rem = 0.8em =  16*0.8 =12.8px */
+}
+
+body {
+  background-color: bisque;
+  
+}
+
+header {
+  background-color: aqua;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer {
+  background-color: aqua;
+  padding: 20px 50px;
+}
+
+.about {
+  background-color: lavender;
+  padding: 20px 50px;
+}
+
+.articles {
+  background-color: lightgray;
+  padding: 20px 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(76, 1, 13, 0.882);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.7rem;
+}
+
+.img-about {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  color: darkblue;
+  text-decoration: overline;
+  text-decoration-color: red;
+  text-decoration-style: dotted;
+  text-transform: uppercase;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.content {
+  padding: 20px 50px;
+}
+
+
+
+/*
+
+1em =  размеру шрифта в браузере = 16px
+
+1rem = размеру шрифта, 
+который задан у тега html
+*/
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: orange;
+}
+a:focus {
+  color: blue;
+}
+
+.page-list li:nth-child(odd) {
+  background-color: aqua;
+}
+
+h2::after {
+  content: "new";
+  font-size: 10px;
+  margin-left: 10px;
+  color:red;
+}
+
+ol.page-list {
+  border-bottom: dashed 1px red;
+}
+
+
+.table-example {
+  border: 5px solid red;
+  border-collapse: collapse;
+}
+.table-example td,
+.table-example th {
+  border: 1px solid black;
+  padding: 5px 20px;
+  text-align: ce;
+}
+.table-example caption {
+  color:red;
+  font-style: italic;
+}
+
+.table-example tr:nth-child(odd){
+  background-color: lavender;
+}
+.table-example td:first-child {
+  color:red;
+}
+
+#form-example {
+  border: 3px solid darkblue;
+  background-color: lavender;
+  border-radius: 30px;
+  padding: 30px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+#form-example input[type=submit],
+#form-example input[type=reset]{
+  padding: 10px 15px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 5px;
+  color:white;
+}
+#form-example input[type=submit]:hover,
+#form-example input[type=reset]:hover{
+  background-color: blue;
+  color:lightblue;
+}
+
+#form-example input[type=text],
+#form-example input[type=password]{
+  background-color: lightblue;
+  border: darkblue 1px solid;
+  border-radius: 5px;
+  padding: 7px;
+  color: darkblue;
+  margin-bottom: 5px;
+}
+
+
+#form-example textarea {
+  background-color: lightblue;
+  border:1px solid darkblue;
+  color: darkblue;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 162px;
+  height: 50px;
+}
